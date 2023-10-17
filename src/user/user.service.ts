@@ -51,7 +51,7 @@ export class UserService {
       }
       await this.User.delete(id); // 使用 await 等待删除操作
       datas.code = 1;
-      datas.msg = '删除成功';
+      datas.msg = '删除成功。';
     } catch (err) {
       datas.err = err;
     }
